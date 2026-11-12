@@ -1,0 +1,31 @@
+@font-face{font-family:Sora;src:url(pisma/sora-latin-ext-wght-normal.woff2) format('woff2');font-weight:100 800;font-display:swap}
+@font-face{font-family:Manrope;src:url(pisma/manrope-latin-ext-wght-normal.woff2) format('woff2');font-weight:200 800;font-display:swap}
+:root{--bg:#0a0c13;--p1:#161a28;--p2:#1e2333;--z:#e1c781;--zs:#efdca0;--zt:#b8975a;--t:#eceef6;--tl:#9aa1b8;--n:#7e8894;--g:linear-gradient(135deg,#efdca0,#e1c781,#b8975a)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font:16px/1.6 Manrope,system-ui,sans-serif}
+h1,h2,.logo{font-family:Sora,system-ui,sans-serif}a{color:var(--z)}
+.top{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:18px 22px;border-bottom:1px solid #222838}
+.logo{text-decoration:none;color:var(--t);font-size:22px;font-weight:500}.logo b{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:700}.logo span{color:var(--tl)}
+.od{color:var(--tl);font-size:14px}
+main{max-width:860px;margin:0 auto;padding:22px}
+.hero{padding:34px 0 10px}.hero h1{font-size:clamp(30px,5vw,46px);line-height:1.15;margin:0 0 16px}
+.zlato{background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:18px;color:#cfd3e2}.body{padding-left:20px}.body li{margin:4px 0}
+.karta,.info{background:var(--p1);border:1px solid #232a3c;border-radius:16px;padding:24px;margin:22px 0;box-shadow:0 10px 30px #0006}
+.form label{display:block;margin:0 0 14px;font-size:14px;color:var(--tl)}
+.form input:not([type=checkbox]),.form textarea{display:block;width:100%;margin-top:5px;padding:11px 12px;border-radius:10px;border:1px solid #2c3448;background:var(--p2);color:var(--t);font:inherit}
+.form input:focus,.form textarea:focus{outline:2px solid var(--zt);border-color:transparent}
+.r2,.r3{display:grid;gap:12px}.r2{grid-template-columns:1fr 1fr}.r3{grid-template-columns:1fr 1fr 1fr}
+@media(max-width:640px){.r2,.r3{grid-template-columns:1fr}}
+.chk{display:flex!important;gap:10px;align-items:flex-start;line-height:1.45}.chk input{margin-top:3px;accent-color:var(--z)}
+.hp{position:absolute;left:-9999px}
+.btn{display:inline-block;border:0;border-radius:12px;padding:13px 22px;background:var(--g);color:#1a1500;font:700 16px Sora,sans-serif;cursor:pointer;text-decoration:none}
+.btn.mini{padding:8px 14px;font-size:14px}
+.tlm{color:var(--tl);font-size:14px}
+.platba{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;background:var(--p2);padding:16px;border-radius:12px}
+.platba dt{color:var(--tl)}.platba dd{margin:0}code{font:15px 'DM Mono',ui-monospace,monospace}
+.kop{margin-left:8px;border:1px solid var(--zt);background:none;color:var(--z);border-radius:8px;padding:2px 8px;cursor:pointer;font-size:12px}
+.odpoved{background:var(--p2);border-left:3px solid var(--z);padding:14px 16px;border-radius:10px;white-space:normal}
+.ot{border-top:1px solid #232a3c;padding:10px 0}.ot summary{cursor:pointer}.st-zaplatene summary b{color:var(--z)}
+.nahlad{height:90px;border-radius:8px;margin-right:6px}
+footer{text-align:center;color:var(--n);font-size:13px;padding:30px 16px}
+hr{border:0;border-top:1px solid #232a3c;margin:20px 0}
